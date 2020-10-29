@@ -29,3 +29,22 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "";
   }
 }, 1000);
+
+
+
+
+
+
+
+
+var q = 0;
+var txt = 'Make. Break. Innovate';
+var speed = 50;
+
+function typeWriter() {
+  if (q < txt.length) {
+    document.getElementById("mbi").innerHTML += txt.charAt(i);
+    q++;
+    setTimeout(typeWriter, speed);
+  }
+}
