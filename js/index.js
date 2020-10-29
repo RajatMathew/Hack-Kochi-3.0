@@ -35,16 +35,15 @@ var x = setInterval(function() {
 
 
 
-
-
 var q = 0;
 var txt = 'Make. Break. Innovate';
 var speed = 50;
 
 function typeWriter() {
-  if (q < txt.length) {
-    document.getElementById("mbi").innerHTML += txt.charAt(i);
-    q++;
+  if (q < txt.length) {
+    document.getElementById("mbi").innerHTML += txt.charAt(q);
+    q++;
     setTimeout(typeWriter, speed);
   }
 }
+typeWriter();
