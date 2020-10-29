@@ -79,3 +79,8 @@
 a{
     display: inline;
 }
+
+.timeline-heading{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
