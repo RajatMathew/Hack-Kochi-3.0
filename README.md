@@ -1,1 +1,3 @@
-# hack-kochi-3.0
+# Hack Kochi 3.0
+
+Website for Hack Kochi 3.0

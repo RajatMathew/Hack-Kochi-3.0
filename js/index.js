@@ -29,3 +29,35 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "";
   }
 }, 1000);
+
+
+
+
+var q = 0;
+var txt = 'Make. Break. Innovate';
+var speed = 100;
+document.getElementById("mbi").innerHTML = " ";
+
+function wait(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
+function typeWriter() {
+
+  if (q < txt.length) {
+	  if(document.getElementById("mbi").innerHTML == " Make." || document.getElementById("mbi").innerHTML == " Make. Break.")
+{
+wait(200);
+}
+    document.getElementById("mbi").innerHTML += txt.charAt(q);
+    q++;
+    setTimeout(typeWriter, speed);
+  }
+  
+
+}
+typeWriter();

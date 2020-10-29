@@ -1,308 +1,116 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/*-------------------
------News Styles-----
----------------------*/    
-.timeline{
-  position:relative;
-  margin-bottom:100px;
-  z-index:1;
-}
+/* Document
+   ========================================================================== */
 
-.timeline:before{
-  display:block;
-  content:"";
-  position:absolute;
-  width:50%;
-  height:100%;
-  left:1px;
-  top:0;
-  border-right:1px solid #5CC9DF;
-  z-index:-1;
-} 
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
 
-.timeline:after{
-  display:block;
-  content:"";
-  position:absolute;
-  width:50%;
-  height:100px;
-  left:1px;
-  bottom:-105px;
-  border-right:1px dashed #5CC9DF;
-  z-index:-1;
-} 
-
-.timeline .date-title{
-  text-align:center;
-  margin:70px 0 50px;
-}
-
-.timeline .date-title span{
-  padding:15px 30px;
-  font-size:21px;
-  font-weight:400;
-  color:#fff;
-  background:#5CC9DF;
-  border-radius:5px;
-}
-
-.news-item {
-  padding-bottom:45px;
-}
-
-.news-item.right {
-  float:right;
-  margin-top:40px;
-}
-.news-item .news-content {
-  margin:20px 30px 0 0;
-  position:relative;
-  padding:30px;
-  padding-left:100px;
-  background:#f5f5f5;
-  border-radius:10px;
-  box-shadow:-5px 5px 0 rgba(0,0,0,0.08);
-  -webkit-transition:all .3s ease-out;
-  transition:all .3s ease-out;
-}
-
-.news-item:hover .news-content {
-  background:#5CC9DF;
-  color:#fff;
-}
-
-.news-item.right .news-content {
-  margin:20px 0 0 30px;
-  box-shadow:5px 5px 0 rgba(0,0,0,0.08);
-}
-
-.news-item .news-content:after {
-  display:block;
-  content:"";
-  position:absolute;
-  top:50px;
-  right:-40px;
-  width:0px;
-  height:0px;
-  background:transparent;
-  border:20px solid transparent;
-  border-left:20px solid #f5f5f5;
-  -webkit-transition:border-left-color .3s ease-out;
-  transition:border-left-color .3s ease-out;
-}
-
-.news-item.right .news-content:after {
-  position:absolute;
-  left:-40px;
-  right:auto;
-  border-left:20px solid transparent;
-  border-right:20px solid #f5f5f5;
-  -webkit-transition:border-right-color .3s ease-out;
-  transition:border-right-color .3s ease-out;
-}
-
-.news-item:hover .news-content:after {
-  border-left-color:#5CC9DF;
-}
-
-.news-item.right:hover .news-content:after {
-  border-left-color:transparent;
-  border-right-color:#5CC9DF;
-}
-
-.news-item .news-content:before {
-  display:block;
-  content:"";
-  position:absolute;
-  width:20px;
-  height:20px;
-  right:-55px;
-  top:60px;
-  background:#5CC9DF;
-  border:3px solid #fff;
-  border-radius:50%;
-  -webkit-transition:background .3s ease-out;
-  transition:background .3s ease-out;
-}
-
-.news-item.right .news-content:before {
-  left:-55px;
-  right:auto;
-}
-
-.news-content .date {
-  position:absolute;
-  width:80px;
-  height:80px;
-  left:10px;
-  text-align:center;
-  color:#5CC9DF;
-  -webkit-transition:color .3s ease-out;
-  transition:color .3s ease-out;
-}
-
-.news-item:hover .news-content .date {
-  color:#fff;
-}
-
-.news-content .date p{
-  margin:0;
-  font-size:48px;
-  font-weight:600;
-  line-height:48px;
-}
-
-.news-content .date small{
-  margin:0;
-  font-size:26px;
-  font-weight:300;
-  line-height:24px;
-}
-
-.news-content .news-title{
-  font-size:24px;
-  font-weight:400;
-}
-
-.news-content p{
-  font-size:1.4rem;
-  line-height:24px;
-  font-weight:300;
-  letter-spacing:0.02em;
-  margin-bottom:10px;
-  font-weight: 500;
-}
-
-.news-content .read-more,
-.news-content .read-more:hover,
-.news-content .read-more:active,
-.news-content .read-more:focus{
-  padding:10px 0;
-  text-decoration:none;
-  font-size:16px;
-  color:#7A7C7F;
-  line-height:24px;
-}
-
-.news-item:hover .news-content .read-more,
-.news-item:hover .news-content .read-more:hover,
-.news-item:hover .news-content .read-more:active,
-.news-item:hover .news-content .read-more:focus{
-  color:#fff;
-}
-
-.news-content .read-more{
-  -webkit-transition:padding .3s ease-out;
-  transition:padding .3s ease-out;
-}
-
-.news-content .read-more:hover {
-  padding-left:7px;
-}
-
-.news-content .read-more:after{
-  content:'\f054';
-  padding-left:15px;
-  font-family:'FontAwesome';
-  font-size:21px;
-  line-height:21px;
-  color:#5CC9DF;
-  vertical-align:middle;
-  -webkit-transition:padding .3s ease-out;
-  transition:padding .3s ease-out;
-}
-
-.news-content .read-more:hover:after{
-  padding-left:20px;
-}
-
-.news-item:hover .news-content .read-more:after{
-  color:#fff;
-}
-
-.news-content .news-media{
-  position:absolute;
-  width:80px;
-  bottom:-45px;
-  right:40px;
-  border-radius:8px;
-}
-
-.news-content .news-media img{
-  border-radius:8px;
-  transform:scale(1);
-  -webkit-transition:-webkit-transform .3s ease-out;
-  transition:transform .3s ease-out;
-}
-
-.news-content .news-media a{
-  display:block;
-text-decoration:none;
-  background:#fff;
-  border-radius:8px;
-  overflow:hidden;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-}
-
-.news-content .news-media a:hover img{
-  -webkit-transform:scale(1.3);
-  transform:scale(1.3);
-}
-
-.news-content .news-media a:after{
-  content:'\f065';
-  position:absolute;
-  width:100%;
-  top:0;
-  left:0;
-  font-family:FontAwesome;
-  font-size:32px;
-  line-height:80px;
-  text-align:center;
-  color:#5CC9DF;
-  -webkit-transform:scale(0);
-  transform:scale(0);
-  opacity:0;
-  -webkit-transition:all .2s ease-out .1s;
-  transition:all .2s ease-out .1s;
-}
-
-.news-content .news-media.video a:after{
-  content:'\f04b';
-}
-
-.news-content .news-media a:hover:after{
-  -webkit-transform:scale(1);
-  transform:scale(1);
-  opacity:1;
-}
-
-.news-content .news-media.gallery{
-  box-shadow:4px 4px 0 #bbb,8px 8px 0 #ddd;
-}
-                                      
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
 body {
   margin: 0;
 }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
 
 a {
   background-color: transparent;
 }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
 img {
   border-style: none;
 }
 
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
 
 button {
   font-family: inherit; /* 1 */
@@ -311,21 +119,39 @@ button {
   margin: 0; /* 2 */
 }
 
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
 
 button { /* 1 */
   overflow: visible;
 }
 
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
 button { /* 1 */
   text-transform: none;
 }
 
-button {
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"] {
   -webkit-appearance: button;
 }
 
+/**
+ * Remove the inner border and padding in Firefox.
+ */
 
-button::-moz-focus-inner {
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -334,7 +160,8 @@ button::-moz-focus-inner {
  * Restore the focus styles unset by the previous rule.
  */
 
-button:-moz-focusring {
+button:-moz-focusring,
+[type="button"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -418,6 +245,9 @@ button:-moz-focusring {
 
 
 h1,
+h2,
+h3,
+h5,
 p {
   margin: 0;
 }
@@ -435,6 +265,13 @@ button {
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -510,7 +347,10 @@ button {
   cursor: pointer;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h5 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -555,7 +395,8 @@ button {
  */
 
 img,
-svg {
+svg,
+video {
   display: block;
   vertical-align: middle;
 }
@@ -567,9 +408,38 @@ svg {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img {
+img,
+video {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 .bg-black {
@@ -582,6 +452,12 @@ img {
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+.bg-gray-100 {
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
 }
 
 .hover\:bg-gray-900:hover {
@@ -604,6 +480,10 @@ img {
 
 .inline-flex {
   display: inline-flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -654,12 +534,33 @@ img {
   font-size: 2.25rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .ml-auto {
@@ -699,8 +600,21 @@ img {
   padding-right: 0.75rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pt-0 {
   padding-top: 0;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-20 {
@@ -713,6 +627,12 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+.text-gray-600 {
+  --text-opacity: 1;
+  color: #718096;
+  color: rgba(113, 128, 150, var(--text-opacity));
 }
 
 .text-blue-400 {
@@ -733,10 +653,24 @@ img {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+.hover\:text-orange-500:hover {
+  --text-opacity: 1;
+  color: #ed8936;
+  color: rgba(237, 137, 54, var(--text-opacity));
+}
+
 .hover\:text-blue-900:hover {
   --text-opacity: 1;
   color: #2a4365;
   color: rgba(42, 67, 101, var(--text-opacity));
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
 }
 
 .tracking-tight {
@@ -749,6 +683,12 @@ img {
 
 .w-full {
   width: 100%;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
@@ -786,24 +726,12 @@ img {
 
 @media (min-width: 640px) {
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .sm\:m-0 {
-    margin: 0;
-  }
-
   .sm\:mt-0 {
     margin-top: 0;
   }
 
   .sm\:ml-2 {
     margin-left: 0.5rem;
-  }
-
-  .sm\:min-w-full {
-    min-width: 100%;
   }
 
   .sm\:p-0 {
@@ -813,8 +741,12 @@ img {
 
 @media (min-width: 768px) {
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:w-1\/4 {
+    width: 25%;
   }
 }
 
@@ -842,10 +774,6 @@ img {
 
   .lg\:h-auto {
     height: auto;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
   }
 
   .lg\:ml-auto {
