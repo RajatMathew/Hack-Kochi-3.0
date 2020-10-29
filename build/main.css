@@ -380,3 +380,9 @@ a{
 .grid .text {
   padding: 20px;
 }
+
+
+@font-face {
+    font-family: CS;
+    src: url('./assets/Circular Std Black.ttf');
+    }
