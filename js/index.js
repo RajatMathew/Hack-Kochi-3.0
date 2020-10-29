@@ -40,6 +40,7 @@ var txt = 'Make. Break. Innovate';
 var speed = 50;
 
 function typeWriter() {
+  document.getElementById("mbi").innerHTML = "";
   if (q < txt.length) {
     document.getElementById("mbi").innerHTML += txt.charAt(q);
     q++;
