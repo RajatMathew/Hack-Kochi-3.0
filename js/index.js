@@ -1,15 +1,3 @@
-var date = new Date();
-setInterval( () => {
-    var date = new Date();
-    var h = date.getHours();
-    var s = date.getMinutes();
-    if(date.getHours() >= 13){h -= 12;}
-    if(date.getMinutes() <=9){s = "0" + s.toString();}
-    document.getElementById("timer").innerText =  h + ":" + date.getMinutes() + ":" + date.getSeconds() + " to go!";
-}, 1000);
-
-
-
 var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
 // Update the count down every 1 second
