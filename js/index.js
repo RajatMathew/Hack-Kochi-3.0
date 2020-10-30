@@ -46,7 +46,7 @@ var x = setInterval(function() {
 
 	if(document.getElementById("timer").innerHTML == '&nbsp;')
 	{
-		wait(2600);
+		wait(4000);
 	}
   // Get today's date and time
   var now = new Date().getTime();
