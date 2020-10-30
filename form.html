@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .imp-start {
+        color: red;
+      }
+    </style>
+    <title>Register - IEEE SPAAM</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-176044980-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-176044980-1");
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="https://ieeespaam.macehub.in/">
+        <img src="./assets//images/logo.png" alt="logo" height="50px" />
+      </a>
+    </header>
+
+<h6 id="hi">hiii</h6>
+
+    <div class="container">
+      <div class="form-container">
+        <h2 class="my-5">
+          <span class="d-block mb-2">Hack Kochi Registration</span>
+          <small class="d-block"
+            >Immerse yourself in the world of opportunities. Fill out the form
+            and reserve your seat.</small
+          >
+        </h2>
+        <form method="post" autocomplete="off" name="google-sheet">
+          <div class="form-row">
+            <div class="form-group col-sm-6">
+              <label for="name">Name<span class="imp-start">*</span> </label>
+              <input type="text" class="form-control" id="name" name="Name" />
+            </div>
+
+            <div class="form-group col-sm-6">
+              <label for="email">Email<span class="imp-start">*</span> </label>
+              <input type="text" class="form-control" id="email" name="Email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="college"
+              >College<span class="imp-start">*</span>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="college"
+              name="College"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-no"
+              >Mobile No<span class="imp-start">*</span>
+            </label>
+            <input
+              type="tel"
+              class="form-control"
+              id="contact-no"
+              name="Contact no"
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-sm-4">
+              <label for="year-of-study"
+                >Year of Study<span class="imp-start">*</span>
+              </label>
+              <select
+                class="custom-select"
+                id="year-of-study"
+                name="Year of study"
+              >
+                <option value="" selected>Choose a year</option>
+                <option value="1">First Year</option>
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group col-sm-8">
+              <label for="department"
+                >Department<span class="imp-start">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="department"
+                name="Department"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-sm-6">
+              <label for="ieee-section">IEEE Section </label>
+              <input
+                placeholder="eg.IEEE Kerala Section"
+                type="text"
+                class="form-control"
+                id="ieee-section"
+                name="IEEE Section"
+              />
+            </div>
+
+            <div class="form-group col-sm-6">
+              <label for="ieee-region">IEEE Region </label>
+              <select class="custom-select" id="ieee-region" name="IEEE Region">
+                <option value="1">Region 1-6 (US)</option>
+                <option value="7">Region 7 (Canada)</option>
+                <option value="8"
+                  >Region 8 (Africa, Europe, Middle East)</option
+                >
+                <option value="9">Region 9 (Latin America)</option>
+                <option value="10" selected
+                  >Region 10 (Asia and Pacific)</option
+                >
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <legend class="col-form-label">
+              Are you an IEEE Member?<span class="imp-start">*</span>
+            </legend>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="isMember"
+                id="isMemberRad1"
+                value="Yes"
+              />
+              <label class="form-check-label" for="isMemberRad1">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="isMember"
+                id="isMemberRad2"
+                value="No"
+              />
+              <label class="form-check-label" for="isMemberRad2">No</label>
+            </div>
+          </div>
+          <br />
+
+          <div class="form-group">
+            <legend class="col-form-label">
+              Which sessions will you be attending?(Choose all that are
+              applicable )<span class="imp-start">*</span>
+            </legend>
+            <br />
+            <div class="form-check">
+              <input type="radio" id="hck" name="event" value="hck">
+              <label class="form-check-label" for="events1">
+                Hackathon
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="ctf" name="event" value="ctf">
+              <label class="form-check-label" for="events2">
+                CTF
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="dc" name="event" value="dc">
+              <label class="form-check-label" for="events3">
+                Design Challenge
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="mc" name="event" value="mc">
+              <label class="form-check-label" for="events4">
+                Marketing challenge
+              </label>
+            </div>
+            <br />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Expectation from the event (optional) </label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              name="Expectations"
+            ></textarea>
+          </div>
+
+          <button type="submit" id="btn-submit" class="btn btn-info">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p class="text">
+        Designed and Developed by
+        <a href="https://www.linkedin.com/in/sruthyml/"   target="_blank" style="color: white;" rel="nofollow">Sruthy M L</a> and team.
+      </p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/form.js"></script>
+  </body>
+</html>
