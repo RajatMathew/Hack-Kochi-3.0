@@ -26,7 +26,7 @@
         color: red;
       }
     </style>
-    <title>Register - IEEE SPAAM</title>
+    <title>Register - Hack Kochi 3.0</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -46,20 +46,16 @@
   <body>
     <header>
       <a href="https://ieeespaam.macehub.in/">
-        <img src="./assets//images/logo.png" alt="logo" height="50px" />
+        <img src="assets/img/hk_logo.png" alt="logo" height="50px" />
       </a>
     </header>
 
-<h6 id="hi">hiii</h6>
 
-    <div class="container">
+     <div class="container">
       <div class="form-container">
         <h2 class="my-5">
           <span class="d-block mb-2">Hack Kochi Registration</span>
-          <small class="d-block"
-            >Immerse yourself in the world of opportunities. Fill out the form
-            and reserve your seat.</small
-          >
+          
         </h2>
         <form method="post" autocomplete="off" name="google-sheet">
           <div class="form-row">
@@ -185,10 +181,52 @@
           </div>
           <br />
 
+
           <div class="form-group">
             <legend class="col-form-label">
-              Which sessions will you be attending?(Choose all that are
-              applicable )<span class="imp-start">*</span>
+              Were you part of the ORE mentorship program?<span class="imp-start">*</span>
+            </legend>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="isORE"
+                id="isOREyes"
+                value="Yes"
+              />
+              <label class="form-check-label" for="isMemberRad1">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="isORE"
+                id="isOREno"
+                value="No"
+              />
+              <label class="form-check-label" for="isMemberRad2">No</label>
+            </div>
+          </div>
+
+
+
+          <div class="form-group">
+            <label for="contact-no"
+              >If you were a part of ORE, which course(s) did you attend? And who was your mentor?<span class="imp-start"></span>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="ore-stream"
+              name="ORE Stream"
+            />
+          </div>
+
+
+
+          <div class="form-group">
+            <legend class="col-form-label">
+              Which competition are you interested in? (Participation is restricted to one competition per person)<span class="imp-start">*</span>
             </legend>
             <br />
             <div class="form-check">
@@ -198,46 +236,93 @@
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" id="ctf" name="event" value="ctf">
+              <input type="radio" id="ctf" name="event" value="CTF">
               <label class="form-check-label" for="events2">
                 CTF
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" id="dc" name="event" value="dc">
+              <input type="radio" id="dc" name="event" value="Design Challenge">
               <label class="form-check-label" for="events3">
                 Design Challenge
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" id="mc" name="event" value="mc">
+              <input type="radio" id="mc" name="event" value="Marketing Challenge">
               <label class="form-check-label" for="events4">
                 Marketing challenge
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="mc" name="event" value="Technical Presentation">
+              <label class="form-check-label" for="events4">
+                Technical Presentation
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="mc" name="event" value="PLC">
+              <label class="form-check-label" for="events4">
+                PLC Ladder Logic challenge
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="mc" name="event" value="Robotics challenge">
+              <label class="form-check-label" for="events4">
+                Robotics challenge
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="mc" name="event" value="Solar">
+              <label class="form-check-label" for="events4">
+                Solar system design challenge
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="mc" name="event" value="Coding">
+              <label class="form-check-label" for="events4">
+                Coding competition
               </label>
             </div>
             <br />
           </div>
 
           <div class="form-group">
-            <label for="message">Expectation from the event (optional) </label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="3"
-              name="Expectations"
-            ></textarea>
-          </div>
-
+            
+            <br />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="events1"
+                value="I confirm that all the data provided are true to he best of my knowledge and if any of those are found to be Flase I shall be discqualified from the competitons."
+                name="tc"
+              />
+              <label class="form-check-label" for="events1">
+                I confirm that all the data provided are true to the best of my knowledge and if any of those are found to be False I shall be disqualified from the competitons.
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="events2"
+                value="I hereby provide my consent to the organizers of Hack Kochi to use my mobile number and email address for communications regarding the event."
+                name="tc"
+              />
+              <label class="form-check-label" for="events2">
+                I hereby provide my consent to the organizers of Hack Kochi to use my mobile number and email address for communications regarding the event.
+              </label>
+            </div>
+          <br><br>
           <button type="submit" id="btn-submit" class="btn btn-info">
             Submit
           </button>
         </form>
       </div>
     </div>
-    <footer>
+    <footer style="background-color: #fff;">
       <p class="text">
-        Designed and Developed by
-        <a href="https://www.linkedin.com/in/sruthyml/"   target="_blank" style="color: white;" rel="nofollow">Sruthy M L</a> and team.
+        Designed and Developed by IEEE ORE Team.
       </p>
     </footer>
 
