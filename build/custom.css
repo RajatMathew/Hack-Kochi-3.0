@@ -29,3 +29,9 @@
     margin-bottom: 1rem; 
     display: inline-block;
 }
+.sponsor-img a{
+    padding: 0 3rem;
+}
+.sponsor-img img{
+    width: 100%;
+}
