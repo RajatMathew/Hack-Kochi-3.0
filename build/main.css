@@ -72,7 +72,7 @@
     height:100%;
     left:1px;
     top:0;
-    border-right:1px solid #5CC9DF;
+    border-right:1px solid #428de8;
     z-index:-1;
   } 
   
@@ -84,7 +84,7 @@
     height:100px;
     left:1px;
     bottom:-105px;
-    border-right:1px dashed #5CC9DF;
+    border-right:1px dashed #428de8;
     z-index:-1;
   } 
   
@@ -98,7 +98,7 @@
     font-size:21px;
     font-weight:400;
     color:#fff;
-    background:#5CC9DF;
+    background:#428de8;
     border-radius:5px;
   }
   
@@ -124,7 +124,7 @@
   }
   
   .news-item:hover .news-content {
-    background:#5CC9DF;
+    background:#428de8;
     color:#fff;
   }
   
@@ -159,12 +159,12 @@
   }
   
   .news-item:hover .news-content:after {
-    border-left-color:#5CC9DF;
+    border-left-color:#428de8;
   }
   
   .news-item.right:hover .news-content:after {
     border-left-color:transparent;
-    border-right-color:#5CC9DF;
+    border-right-color:#428de8;
   }
   
   .news-item .news-content:before {
@@ -175,7 +175,7 @@
     height:20px;
     right:-55px;
     top:60px;
-    background:#5CC9DF;
+    background:#428de8;
     border:3px solid #fff;
     border-radius:50%;
     -webkit-transition:background .3s ease-out;
@@ -193,7 +193,7 @@
     height:80px;
     left:10px;
     text-align:center;
-    color:#5CC9DF;
+    color:#428de8;
     -webkit-transition:color .3s ease-out;
     transition:color .3s ease-out;
   }
@@ -263,7 +263,7 @@
     font-family:'FontAwesome';
     font-size:21px;
     line-height:21px;
-    color:#5CC9DF;
+    color:#428de8;
     vertical-align:middle;
     -webkit-transition:padding .3s ease-out;
     transition:padding .3s ease-out;
@@ -316,7 +316,7 @@
     font-size:32px;
     line-height:80px;
     text-align:center;
-    color:#5CC9DF;
+    color:#428de8;
     -webkit-transform:scale(0);
     transform:scale(0);
     opacity:0;
