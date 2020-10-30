@@ -1,5 +1,6 @@
 var countDownDate = new Date("Nov 8, 2020 10:00:00").getTime();
 
+document.getElementById("timer").innerHTML = " ";
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -26,7 +27,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "";
+    document.getElementById("timer").innerHTML = "The hunt has begun!";
   }
 }, 1000);
 
