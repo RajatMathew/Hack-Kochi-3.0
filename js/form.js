@@ -44,7 +44,7 @@ function hideFormDisplaySuccess() {
     <i class="fa fa-check-circle fa-3x" aria-hidden="true"></i>
     <h3>Thank You For Registering for Hack 3.0.</h3>
     <br>
-    <h5><a href="https://ieeespaam.macehub.in/" class="text-white">Back to home</a></h5>
+    <h5><a href="././index.html" class="text-white">Back to home</a></h5>
   `;
   div.className = "successContainer";
   document.querySelector(".container").appendChild(div);
