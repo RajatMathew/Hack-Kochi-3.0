@@ -17,8 +17,6 @@ const scriptURL =
   "https://script.google.com/macros/s/AKfycbwB20DxeFi-3VbgG64q5tyLlk85VS2UtOhAlnjB28vKhTce9Ls/exec";
 const form = document.forms["google-sheet"];
 
-document.getElementById("hi").innerHTML = "dsfbgfd";
-
 form.addEventListener("submit", e => {
   e.preventDefault();
   if (validateForm() && confirm("Are You Sure To Submit?")) {
