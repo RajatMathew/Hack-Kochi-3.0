@@ -40,10 +40,14 @@ var countDownDate = new Date("Nov 6, 2020 12:00:00").getTime();
 
 
 
-wait(2600);
+
 // Update the count down every 1 second
 var x = setInterval(function() {
 
+	if(document.getElementById("timer").innerHTML == '&nbsp;')
+	{
+		wait(2600);
+	}
   // Get today's date and time
   var now = new Date().getTime();
 
@@ -56,9 +60,9 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  if(seconds > 12)
+  if(hours > 12)
   {
-       seconds -= 12;
+       hours -= 12;
   }
   // Display the result in the element with id="demo"
   document.getElementById("timer").innerHTML = days + "d " + hours + "h "
