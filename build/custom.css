@@ -13,3 +13,10 @@
 .events-section .text p{
     flex-grow: 1;
 }
+
+.footer_copyright{
+    text-align: center;
+    padding: 2rem 0 .6rem 0;
+    font-weight: bold;
+    color: #333;
+}
