@@ -386,3 +386,8 @@ a{
   list-style: disc;
   margin-left: 3rem;
 }
+
+@font-face {
+    font-family: CS;
+    src: url('././assets/CircularStdBold.ttf');
+}
