@@ -9,6 +9,9 @@ const ieeeSection = document.getElementById("ieee-section");
 const ieeeRegion = document.getElementById("ieee-region");
 const message = document.getElementById("message");
 const btn = document.getElementById("btn-submit");
+//const tc =  document.getElementById("btn-submit");
+
+
 
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbwB20DxeFi-3VbgG64q5tyLlk85VS2UtOhAlnjB28vKhTce9Ls/exec";
@@ -51,7 +54,7 @@ function hideFormDisplaySuccess() {
 
 function validateForm() {
   const checked = Array.from(
-    document.querySelectorAll("input[name=events]:checked")
+    document.querySelectorAll("input[name=tc]:checked")
   );
   const isMember = document.querySelector("input[name=isMember]:checked");
   if (
@@ -71,6 +74,8 @@ function validateForm() {
     showMessage("alert alert-danger", "Phone number invalid");
   } else if (yearOfStudy.value === "") {
     showMessage("alert alert-danger", "Year of study not selected");
+  } else if (checked.length < 2) {
+    showMessage("alert alert-danger", "Please agree to the terms and conditions.");
   } else if (isMember == null) {
     showMessage("alert alert-danger", "Check if you are an IEEE Member");
   } else {
