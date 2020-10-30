@@ -1,0 +1,15 @@
+.events-section img{
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.events-section .text{
+    height: calc(100% - 230px);
+    display: flex;
+    flex-flow: column;
+}
+.events-section .text p{
+    flex-grow: 1;
+}
