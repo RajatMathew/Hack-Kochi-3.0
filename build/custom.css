@@ -35,3 +35,13 @@
 .sponsor-img img{
     width: 100%;
 }
+
+.contact p, .contact a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.contact a:hover{
+    color: #333;
+}
