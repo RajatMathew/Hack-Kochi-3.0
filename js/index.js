@@ -1,3 +1,13 @@
+
+function wait(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
+
 var q = 0;
 var txt = 'Make. Break. Innovate';
 var speed = 100;
@@ -28,13 +38,6 @@ var countDownDate = new Date("Nov 6, 2020 12:00:00").getTime();
 
 
 
-function wait(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
-}
 
 
 wait(2600);
