@@ -1,62 +1,4 @@
 
-/* sponsor-img{
-    width: 33%;
-} */
-
-/* .sponsors {
-    margin-bottom: 10rem;
-  }
-  .sponsors .row {
-    justify-content: center;
-  }
-  .sponsors__img:not(:last-child) {
-    margin-right: 5rem;
-  }
-  .sponsors__heading {
-    width: fit-content;
-    font-size: 1.4rem;
-    border-bottom: 1px solid #fff;
-    margin: 0 auto;
-    padding-bottom: 0.5rem;
-    margin-bottom: 2rem;
-  }
-  .sponsors__container--student-partners {
-    margin-bottom: 8rem;
-  }
-  .sponsors__container--student-partners h5 {
-    margin-bottom: 8rem;
-  }
-  .sponsors__container--community-partners {
-    margin-bottom: 8rem;
-  }
-  .sponsors__container--community-partners .row:not(:nth-child(2)) {
-    margin-top: -9rem;
-  }
-  .sponsors__container--media-partners h5 {
-    margin-bottom: 8rem;
-  }
-  
-  .sponsors-temp {
-    position: relative;
-    background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
-    padding: 10rem 0 5rem 0;
-  }
-
-  .sponsors-temp {
-    position: relative;
-    background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
-    padding: 10rem 0 5rem 0;
-  }
-
-  .sponsors-prev {
-    margin-bottom: 20rem;
-  }
-  .sponsors-prev .sponsors__img {
-    height: 15rem;
-    margin-bottom: -1rem;
-    margin-right: 1rem;
-  }
-   */
 
    .timeline{
     position:relative;
@@ -391,9 +333,13 @@ a{
   padding: 20px;
   
 }
+@font-face {
+    font-family: 'CS';
+    src: url('././assets/CircularStdBold.ttf');
+}
 
  h3 {
-  font-family: Circular Std Bold;
+  font-family: 'CS', Helvetica, Arial;
     //color: #428de8;
    text-align: left;
 }
@@ -412,10 +358,7 @@ list-style: none;
   margin-left: 3rem;
 }
 
-@font-face {
-    font-family: CS;
-    src: url('././assets/CircularStdBold.ttf');
-}
+
 
 
 .footer_area {
