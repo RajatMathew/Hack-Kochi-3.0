@@ -399,7 +399,7 @@ a{
 }
 p{
   font-family: Circular Std Book;
-  font-weight: lighter;
+  //font-weight: lighter;
   letter-spacing: -0.5px;
 }
 
