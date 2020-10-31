@@ -42,7 +42,7 @@
     color:#fff;
     background:#428de8;
     border-radius:5px;
-    font-family: Circular Std Bold;
+    font-family: 'CS', Arial;
     letter-spacing: -1px;
   }
   
@@ -289,7 +289,6 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-align: center;
-  
 }
 
 .sponsor-img{
@@ -335,7 +334,7 @@ a{
 }
 @font-face {
     font-family: 'CS';
-    src: url('././assets/CircularStdBold.ttf');
+    src: url('./assets/CircularStdBold.ttf');
 }
 
  h3 {
