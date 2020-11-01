@@ -42,7 +42,7 @@ function hideFormDisplaySuccess() {
   let div = document.createElement("div");
   div.innerHTML = `
     <i class="fa fa-check-circle fa-3x" aria-hidden="true"></i>
-    <h3>Thank You For Registering for Hack 3.0.</h3>
+    <h3>Thank You For Registering for Hack Kochi 3.0.</h3>
     <br>
     <h5><a href="././index.html" class="text-white">Back to home</a></h5>
   `;
