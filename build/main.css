@@ -334,7 +334,8 @@ a{
 }
 @font-face {
     font-family: 'CS';
-    src: url('./assets/CircularStdBold.ttf');
+    font-weight: bold;
+    src: url('assets/CircularStdBold.ttf');
 }
 
  h3 {
@@ -524,3 +525,4 @@ ol, ul {
     margin: 0;
     padding: 0;
 }
+
