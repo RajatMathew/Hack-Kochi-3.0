@@ -34,7 +34,7 @@ typeWriter();
 
 
 
-var countDownDate = new Date("Nov 6, 2020 12:00:00").getTime();
+var countDownDate = new Date("November 6 2020 12:00:00 GMT+0530").getTime();
 
 
 
