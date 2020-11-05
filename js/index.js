@@ -34,7 +34,7 @@ typeWriter();
 
 
 
-var countDownDate = new Date("November 6 2020 09:59").getTime();
+var countDownDate = new Date("November 6 2020 10:00").getTime();
 
 
 
@@ -57,10 +57,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  if(hours > 12)
-  {
-       hours -= 12;
-  }
+  
   // Display the result in the element with id="demo"
   document.getElementById("timer").innerHTML = days + "D " + hours + "H "
   + minutes + "M " + seconds + "S left!";
