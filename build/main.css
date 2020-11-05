@@ -1,5 +1,18 @@
 
 
+
+.btn-disable
+{
+cursor: not-allowed;
+pointer-events: none;
+
+/*Button disabled - CSS color class*/
+color: #ffffff;
+background-color: #c0c0c0;
+
+}
+
+
    .timeline{
     position:relative;
     margin-bottom:100px;
@@ -535,4 +548,7 @@ ol, ul {
     margin: 0;
     padding: 0;
 }
+
+
+
 
